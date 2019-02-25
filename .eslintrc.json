@@ -1,0 +1,24 @@
+{
+  "env": {
+    "es6": true,
+    "jest": true,
+    "mocha": true,
+    "node": true
+  },
+  "extends": "airbnb-base",
+  "globals": {
+    "App": true,
+    "Component": true,
+    "getApp": true,
+    "getCurrentPages": true,
+    "Page": true,
+    "requirePlugin": true,
+    "wx": true
+  },
+  "rules": {
+    "arrow-parens": ["error", "always"],
+    "class-methods-use-this": "warn",
+    "no-underscore-dangle": "warn",
+    "object-curly-newline": ["error", { "minProperties": 10, "multiline": true, "consistent": true }]
+  }
+}

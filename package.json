@@ -1,0 +1,31 @@
+{
+  "name": "demo-mp-animations",
+  "version": "0.0.0",
+  "main": "index.js",
+  "bin": {},
+  "scripts": {},
+  "author": {
+    "name": "Wiredcraft",
+    "email": "info@wiredcraft.com",
+    "url": "http://wiredcraft.com"
+  },
+  "contributors": [
+    "Makara Wang"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wiredcraft/demo-mp-animations"
+  },
+  "bugs": {
+    "url": "https://github.com/Wiredcraft/demo-mp-animations/issues"
+  },
+  "homepage": "https://github.com/Wiredcraft/demo-mp-animations",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^5.14.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0"
+  },
+  "license": "MIT",
+  "description": ""
+}
