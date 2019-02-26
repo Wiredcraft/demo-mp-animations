@@ -45,6 +45,11 @@
 					"pathName": "pages/animation-top/index",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "slide",
+					"pathName": "pages/animation/slide"
 				}
 			]
 		}
