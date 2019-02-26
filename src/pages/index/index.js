@@ -51,4 +51,10 @@ Page({
       hasUserInfo: true,
     });
   },
+  navigateToPage(e){
+    console.log(e);
+    const { src } = e.currentTarget.dataset;
+    console.log(src);
+    wx.navigateTo({ url:src });
+  }
 });

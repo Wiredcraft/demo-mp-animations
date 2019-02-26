@@ -1,0 +1,55 @@
+.body-containner{
+  box-sizing: border-box;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background-color 0.5s;
+}
+
+.card {
+  position: fixed;
+  box-sizing: border-box;
+  border-radius: 9px;
+  overflow: hidden;
+
+  transform-origin: top;
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.unlock-image-wrapper image{
+    display: block;
+} 
+
+.item-shadow {
+  position: absolute;
+  top: 20px;
+  left: 18px;
+  right: 18px;
+  bottom: -10px;
+  z-index: -1;
+  filter: blur(10px);
+  border-radius: 20px;
+  background-color: rgba(0,0,0, 0.2);
+}
+
+.card-index{
+  color: white;
+}
+
+.card-index text{
+  opacity: 0.4;
+}
+
+.card-index .index-num {
+  position: absolute;
+  opacity: 1;
+  transition: top 0.5s 0.3s, opacity 0.5s 0.3s ;
+}
+.card-index .break {
+  padding-left: 20px;
+}
+.card-index text:last-child{
+  padding-left: 4px;
+}
