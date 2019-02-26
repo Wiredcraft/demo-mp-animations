@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/animation-top/index",
-    "pages/animation-transform/index"
+    "pages/animation-transform/index",
+    "pages/animation/slide"
   ],
   "window": {
     "backgroundTextStyle": "light",
