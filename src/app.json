@@ -4,7 +4,8 @@
     "pages/carousel/one",
     "pages/animation-top/index",
     "pages/animation-transform/index",
-    "pages/animation/slide"
+    "pages/animation/slide",
+    "pages/animation/checkbox"
   ],
   "window": {
     "backgroundTextStyle": "light",

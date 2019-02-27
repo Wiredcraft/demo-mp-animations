@@ -4,7 +4,7 @@
   <view class="pass" catch:touchstart="onTouchStart" catch:touchmove="onTouchMove" catch:touchend="onTouchEnd">
     <view class="bg">
       <view class="card-container" style="top: {{statusBarHeight + 44}}px">
-        <image class="card" src="/assets/image/profile/pass.svg" mode="aspectFit" />
+        <!-- <image class="card" src="/assets/image/profile/pass.svg" mode="aspectFit" /> -->
         <view class="code-container" style="opacity: {{ isPassVisible ? 1 : 0 }}">
           <image class="code" />
         </view>
