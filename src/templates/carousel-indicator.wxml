@@ -1,0 +1,16 @@
+<!--
+  @params
+    - data         | Array, required
+    - currentIndex | Number, required
+    - class        | String
+    - style        | String, default: square
+    - colorTheme   | String, dark | light, default: dark
+ -->
+<template name="carouselIndicator">
+  <view class="carouselIndicator {{class}} {{colorTheme || 'dark'}}">
+    <block wx:for="{{data}}" wx:key="index">
+      <view class="item {{currentIndex === index && 'active'}} {{style || 'square'}}" />
+    </block>
+  </view>
+</template>
+

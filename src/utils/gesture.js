@@ -48,12 +48,12 @@ export function gestureByTouches(start, end) {
   return gestureByCoordinates(
     {
       x: start[0].pageX,
-      y: start[0].pageY
+      y: start[0].pageY,
     },
     {
       x: end[0].pageX,
-      y: end[0].pageY
-    }
+      y: end[0].pageY,
+    },
   );
 }
 

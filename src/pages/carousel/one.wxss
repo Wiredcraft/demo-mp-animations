@@ -1,0 +1,104 @@
+page {
+  padding: 0 0 80rpx 0;
+  box-sizing: border-box;
+}
+.page-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  box-sizing: border-box;
+  height: 100px;
+  font-size: 30px;
+  padding: 40rpx 0 20rpx;
+}
+.heading {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  box-sizing: border-box;
+  height: 100px;
+  padding-left: 20rpx;
+}
+
+.type1 .swiper {
+  width: 750rpx;
+  height: 500rpx;
+}
+.type1 .slide-image {
+  width: 750rpx;
+  height: 500rpx;
+}
+
+.type2 .swiper {
+  width: 750rpx;
+  height: 500rpx;
+}
+.type2 .swiper-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.type3 .swiper {
+  width: 750rpx;
+  height: 500rpx;
+}
+.type3 .slide-image {
+  width: 750rpx;
+  height: 500rpx;
+}
+
+.type3 .swiper-container {
+  position: relative;
+}
+
+.type3 .carousel-indicator {
+  position: absolute;
+  bottom:40rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  /*left:40rpx;*/
+}
+
+/* DO NOT EDIT */
+.carouselIndicator {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex; }
+  .carouselIndicator.dark > .item {
+    background-color: #9a9a9a; }
+    .carouselIndicator.dark > .item.active {
+      background-color: #111111; }
+  .carouselIndicator.light > .item {
+    background-color: rgba(255, 255, 255, 0.3);
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    position: relative; }
+    .carouselIndicator.light > .item.active:before {
+      content: '';
+      background-color: #ffffff;
+      position: absolute;
+      width: 0px;
+      top: 0px;
+      left: 0px;
+      height: 2px;
+      -webkit-animation: 0.3s progressin forwards;
+              animation: 0.3s progressin forwards; }
+  .carouselIndicator > .item {
+    width: 18px;
+    height: 2px;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s; }
+    .carouselIndicator > .item:not(:first-child) {
+      margin-left: 4px; }
+  .carouselIndicator.continuous {
+    border-radius: 3rpx; }
+    .carouselIndicator.continuous > .item {
+      width: 80rpx;
+      height: 6rpx;
+      margin-left: 0; }
+      .carouselIndicator.continuous > .item.active {
+        border-radius: 3rpx;
+        background-color: #ffffff; }

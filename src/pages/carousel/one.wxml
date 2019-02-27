@@ -1,0 +1,79 @@
+<import src="../../templates/carousel-indicator.wxml" />
+
+<view class="page-heading">Carousels</view>
+
+<view class="type1">
+  <view class="heading">Normal</view>
+  <swiper
+    class="swiper"
+    indicator-dots="{{true}}"
+    autoplay="{{false}}"
+    duration="{{500}}"
+  >
+    <block wx:for="{{images}}" wx:key="*this">
+      <swiper-item>
+        <image
+          src="{{item}}"
+          class="slide-image"
+          width="480"
+          height="800"
+        />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<view class="type2">
+  <view class="heading">With Margin</view>
+  <swiper
+    class="swiper"
+    circular="{{true}}"
+    indicator-dots="{{false}}"
+    autoplay="{{false}}"
+    duration="{{500}}"
+    next-margin="55rpx"
+    previous-margin="55rpx"
+    style="width:750rpx;height:400rpx;"
+  >
+    <block wx:for="{{images}}" wx:key="*this">
+      <swiper-item class="swiper-item">
+        <image
+          src="{{item}}"
+          class="slide-image"
+          style="width: 600rpx;height: 400rpx;"
+        />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+
+<view class="type3">
+  <view class="heading">Customized Indicator</view>
+  <view class="swiper-container">
+    <swiper
+      class="swiper"
+      indicator-dots="{{false}}"
+      autoplay="{{false}}"
+      duration="{{500}}"
+      bindanimationfinish="handleType3SwiperAnimationFinish"
+    >
+      <block wx:for="{{images}}" wx:key="*this">
+        <swiper-item>
+          <image
+            src="{{item}}"
+            class="slide-image"
+            width="480"
+            height="800"
+          />
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="carousel-indicator">
+      <template is="carouselIndicator" data="{{ class: 'indicator continuous', data: images, currentIndex: currentIdxType3, colorTheme: 'light' }}" />
+    </view>
+  </view>
+
+</view>
+
+

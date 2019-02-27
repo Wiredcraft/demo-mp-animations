@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/carousel/one",
     "pages/animation-top/index",
     "pages/animation-transform/index",
     "pages/animation/slide"

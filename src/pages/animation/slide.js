@@ -9,7 +9,7 @@ Page({
     bgOpacity: 0,
     isShowTitle: true,
     enable: false,
-    withBg: true
+    withBg: true,
   },
 
   /**
@@ -26,11 +26,11 @@ Page({
     const { touchStart, touchMoving, isPassVisible } = this.data;
     const direction = gestureMoveByTouches(
       touchMoving || touchStart,
-      e.changedTouches
+      e.changedTouches,
     );
     if (
-      (isPassVisible && direction === 'U') ||
-      (!isPassVisible && direction === 'D')
+      (isPassVisible && direction === 'U')
+      || (!isPassVisible && direction === 'D')
     ) {
       this.togglePass();
     }
@@ -54,9 +54,9 @@ Page({
     const { touchStart, isPassVisible } = this.data;
     const { url } = e.currentTarget.dataset;
     if (
-      !isPassVisible &&
-      url &&
-      gestureTapByTouches(touchStart, e.changedTouches)
+      !isPassVisible
+      && url
+      && gestureTapByTouches(touchStart, e.changedTouches)
     ) {
       this.queueAction(() => wx.navigateTo({ url }));
     }
@@ -65,8 +65,7 @@ Page({
   /* Helpers */
   togglePass() {
     this.setData({
-      isPassVisible: !this.data.isPassVisible
+      isPassVisible: !this.data.isPassVisible,
     });
-  }
-})
-
+  },
+});

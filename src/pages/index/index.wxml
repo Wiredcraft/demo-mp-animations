@@ -16,4 +16,5 @@
   <button bindtap="navigateToPage" data-src="/pages/animation-top/index" style="margin-top:30px;">animation top</button>
   <button bindtap="navigateToPage" data-src="/pages/animation-transform/index">animation transform</button>
   <button bindtap="navigateToPage" data-src="/pages/animation/slide">animation slide</button>
+  <button bindtap="navigateToPage" data-src="/pages/carousel/one">carousels</button>
 </view>
