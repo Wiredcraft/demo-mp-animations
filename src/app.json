@@ -1,6 +1,9 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/image-loading/index",
+    "pages/image-loading/one",
+    "pages/image-loading/two",
     "pages/carousel/one",
     "pages/animation-top/index",
     "pages/animation-transform/index",

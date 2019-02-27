@@ -6,6 +6,6 @@
     <button bindtap="navigateToPage" data-src="/pages/animation/slide">animation slide</button>
     <button bindtap="navigateToPage" data-src="/pages/carousel/one">carousels</button>
     <button bindtap="navigateToPage" data-src="/pages/animation/checkbox">checkbox</button>
-
+    <button bindtap="navigateToPage" data-src="/pages/image-loading/index">image loading</button>
   </view>
 </view>

@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="button-group">
+    <button
+      bindtap="navigateToPage"
+      data-src="/pages/image-loading/one"
+      style="margin-top:30px;"
+    >
+      Default
+    </button>
+    <button bindtap="navigateToPage" data-src="/pages/image-loading/two">
+      Optimized
+    </button>
+  </view>
+</view>

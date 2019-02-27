@@ -1,0 +1,24 @@
+<view class="container" style="{{containerStyle}}">
+  <view class="placeholder" style="{{placeholderStyle}}">
+    <image
+      wx:if="{{withLogo}}"
+      src="/assets/logo.svg"
+      mode="widthFix"
+      class="pattern"
+    ></image>
+  </view>
+
+  <image
+    src="{{srcLo}}"
+    class="img img--with-animation"
+    animation="{{imageAnimation}}"
+    style="{{imgStyle}}"
+  ></image>
+
+  <image
+    src="{{srcHi}}"
+    class="img-loader"
+    bindload="handleImageOnLoad"
+    binderror="handleImageLoadError"
+  ></image>
+</view>

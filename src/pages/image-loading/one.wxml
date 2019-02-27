@@ -1,0 +1,19 @@
+<view>
+  <view>
+    <block wx:for="{{images}}" wx:key="*this">
+      <view class="image-container">
+        <image src="{{item}}" style="width: 750rpx;height: 500rpx;"></image>
+        <view
+          class="image-caption"
+        >
+        🐣 I'm a CTA
+        </view>
+      </view>
+
+      <view>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      </view>
+    </block>
+  </view>
+</view>
+          <!-- bindload="handleProgressiveImageOnLoad" -->

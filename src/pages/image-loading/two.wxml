@@ -1,0 +1,26 @@
+<view>
+  <view>
+    <block wx:for="{{images}}" wx:key="*this">
+      <view class="image-container">
+        <pimage
+          aspectRatio="{{3/2}}"
+          src="{{item}}"
+          key="{{'key:'+index}}"
+          bindload="handleProgressiveImageOnLoad"
+        >
+        </pimage>
+        <view
+          class="image-caption"
+          wx:if="{{img['key:'+index]}}"
+        >
+        🐣 I'm a CTA
+        </view>
+      </view>
+      <view>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      </view>
+    </block>
+  </view>
+</view>
+      <!-- <image src="{{item}}" /> -->
+          <!-- bindload="handleProgressiveImageOnLoad" -->
