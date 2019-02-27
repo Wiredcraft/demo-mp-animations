@@ -1,0 +1,8 @@
+<svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="#FFF" fill="none" fill-rule="evenodd">
+    <path d="M20 39.25c10.631 0 19.25-8.619 19.25-19.25S30.631.75 20 .75.75 9.369.75 20 9.369 39.25 20 39.25z" stroke-width="1.5"/>
+    <path stroke-width="2" d="M13.614 20.178l4.51 4.526 9.233-9.108" stroke-dasharray="20 22" stroke-dashoffset="21">
+      <animate attributeName="stroke-dashoffset" values="21;0" keyTimes="0;1" from="21" to="0" dur="0.6s" repeatCount="1" fill="freeze" />
+    </path>
+  </g>
+</svg>

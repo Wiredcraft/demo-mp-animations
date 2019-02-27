@@ -1,0 +1,14 @@
+ <view class="title">Choose color?</view>
+<view class="checkbox-container">
+  <block wx:for="{{colors}}" wx:for-item="color" wx:key="{{color}}">
+    <view class="preference-item" bindtap="handleItemClick" data-color="{{color}}">
+    <view class="preference-item-container">
+      <view class="image-preference {{ selected[color] ? 'active' : ''}}">
+          <view class="color-block" style="background: #{{color}}"></view>
+          <view class="preference-overlay {{ selected[color] ? 'active' : ''}}"></view>
+      </view>
+      <image class="checkmark {{ selected[color] ? 'active' : ''}}" src="../../assets/svg/checkmark.svg"></image>
+    </view>
+  </view>
+  </block>
+</view>
