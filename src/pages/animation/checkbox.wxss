@@ -1,8 +1,19 @@
+
+.title{
+    padding: 30px;
+    padding-bottom: 0;
+}
+.checkbox-container{
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 .preference-item {
+    display: inline-block;
     width: 150px;
-    text-align: center;
-    margin: 40px auto 20px;
     position: relative;
+    margin-top: 20px;
   }
   
   .preference-item:nth-child(even) {
@@ -23,13 +34,12 @@
     overflow: hidden;
   }
   
-  .image-preference image {
+  .image-preference .color-block {
     width: 100%;
     height: 100%;
-    transition: all 0.3s ease-in-out;
   }
   
-  .image-preference.active image {
+  .image-preference.active .color-block {
     transform: scale(1.1);
   }
   
