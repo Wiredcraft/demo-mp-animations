@@ -37,10 +37,13 @@
   .image-preference .color-block {
     width: 100%;
     height: 100%;
+    line-height: 150px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
   }
   
   .image-preference.active .color-block {
-    transform: scale(1.1);
+    transform: scale(1.2);
   }
   
   .preference-overlay {
