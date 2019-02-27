@@ -16,7 +16,7 @@
   <view class="profile-user {{ isPassVisible ? 'profile-user_hidden' : '' }}" style="margin-top: {{statusBarHeight + 44}}px" catch:touchstart="onTouchStart" catch:touchmove="onTouchMove" catch:touchend="onTouchEnd">
     <view class="profile-user__info" hover-class="profile-user__hover">
       <view class="profile-user__avatar-container" data-url="/pages/settings/index" catch:touchend="onProfileTouchEnd">
-        <image class="profile-user__avatar" src="https://avatars2.githubusercontent.com/u/496772?s=200&v=4"></image>
+        <image class="profile-user__avatar" src="/assets/avatar.jpg"></image>
       </view>
       <view class="profile-user__details" data-url="/pages/settings/index" catch:touchend="onProfileTouchEnd">
         <text class="profile-user__name">Wiredcraft</text>
